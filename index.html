@@ -75,7 +75,7 @@ YII_CSRF_TOKEN='0e0e5391d72ef9cd5b88ea3bae2847d2b8feea5b';
                     <div class="vcard-functions-wrapper">
                         <a class="header-button ng-hide" ng-show="loadDemo &amp;&amp; (view.numbers_mobile || view.numbers_phone)" ng-click="!loadDemo ?  &#39;&#39; : callAction($event,&#39;headerButton-call&#39;)" ng-style="{&#39;transition&#39;: loadDemo ? &#39;none&#39; : &#39;all 0.15s ease&#39;}" style="transition: all 0.15s ease 0s;">
     <i class="icon-phone dynamicTextColor"></i>
-    <small class="dynamicTextColor">Call</small>
+    <small class="dynamicTextColor">Ligar</small>
 </a>
 
 <a class="header-button ng-hide" ng-show="loadDemo &amp;&amp; (view.email)" ng-click="!loadDemo ?  &#39;&#39; : callAction($event,&#39;headerButton-email&#39;)" ng-style="{&#39;transition&#39;: loadDemo ? &#39;none&#39; : &#39;all 0.15s ease&#39;}" style="transition: all 0.15s ease 0s;">
@@ -85,7 +85,7 @@ YII_CSRF_TOKEN='0e0e5391d72ef9cd5b88ea3bae2847d2b8feea5b';
 
 <a href="tel:11 953206601" ng-show="!loadDemo &amp;&amp; (view.numbers_mobile || view.numbers_phone)">
     <i class="icon-phone dynamicTextColor"></i>
-    <small class="dynamicTextColor">Call</small>
+    <small class="dynamicTextColor">Ligar</small>
 </a>
 
 <a href="mailto:fcgomes@sp.gov.br?subject=From%20my%20vCard&amp;body=" target="_newEmail" ng-show="!loadDemo &amp;&amp; (view.email)" class="last-element">
@@ -132,17 +132,17 @@ YII_CSRF_TOKEN='0e0e5391d72ef9cd5b88ea3bae2847d2b8feea5b';
     <div class="vcard-row" ng-show="view.numbers_mobile">
         <i class="icon icon-phone"></i>
         <h4><a href="tel:11 953206601" class="ng-binding">11 953206601</a></h4>
-        <small>Mobile</small>
+        <small>Celular</small>
     </div>
     <div class="vcard-row pt0" ng-show="view.numbers_phone">
         <i ng-show="view.numbers_phone &amp;&amp; !view.numbers_mobile" class="icon icon-phone ng-hide"></i>
         <h4><a href="tel:11 32938557" class="ng-binding">11 32938557</a></h4>
-        <small>Telephone</small>
+        <small>Telefone</small>
     </div>
     <div class="vcard-row pt0" ng-show="view.numbers_fax">
 
         <h4 class="ng-binding">8363</h4>
-        <small>Fax</small>
+        <small>Ramal</small>
     </div>
     <div class="vcard-separator" ng-show="view.numbers_mobile || view.numbers_phone"></div>
     <div class="vcard-row" ng-show="view.email">
